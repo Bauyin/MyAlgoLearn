@@ -13,6 +13,7 @@
 		779563F42181FE580008900D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779563F32181FE580008900D /* Assets.xcassets */; };
 		779563F72181FE580008900D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779563F52181FE580008900D /* LaunchScreen.storyboard */; };
 		779563FA2181FE580008900D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 779563F92181FE580008900D /* main.m */; };
+		77956402218201F00008900D /* SortController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77956401218201F00008900D /* SortController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		779563F62181FE580008900D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		779563F82181FE580008900D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		779563F92181FE580008900D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77956400218201F00008900D /* SortController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortController.h; sourceTree = "<group>"; };
+		77956401218201F00008900D /* SortController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				779563F52181FE580008900D /* LaunchScreen.storyboard */,
 				779563F82181FE580008900D /* Info.plist */,
 				779563F92181FE580008900D /* main.m */,
+				77956400218201F00008900D /* SortController.h */,
+				77956401218201F00008900D /* SortController.m */,
 			);
 			path = MyAlgoLearn;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				779563EF2181FE550008900D /* ViewController.m in Sources */,
+				77956402218201F00008900D /* SortController.m in Sources */,
 				779563FA2181FE580008900D /* main.m in Sources */,
 				779563EC2181FE550008900D /* AppDelegate.m in Sources */,
 			);
@@ -285,7 +291,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W387LF7D4B;
 				INFOPLIST_FILE = MyAlgoLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,6 +301,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.koolearn.MyAlgoLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,7 +310,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W387LF7D4B;
 				INFOPLIST_FILE = MyAlgoLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.koolearn.MyAlgoLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
