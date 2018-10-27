@@ -14,6 +14,7 @@
 		779563F72181FE580008900D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779563F52181FE580008900D /* LaunchScreen.storyboard */; };
 		779563FA2181FE580008900D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 779563F92181FE580008900D /* main.m */; };
 		77956402218201F00008900D /* SortController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77956401218201F00008900D /* SortController.m */; };
+		779564052182C8D00008900D /* SortHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 779564042182C8D00008900D /* SortHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		779563F92181FE580008900D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77956400218201F00008900D /* SortController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortController.h; sourceTree = "<group>"; };
 		77956401218201F00008900D /* SortController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortController.m; sourceTree = "<group>"; };
+		779564032182C8D00008900D /* SortHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortHelper.h; sourceTree = "<group>"; };
+		779564042182C8D00008900D /* SortHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				779563F92181FE580008900D /* main.m */,
 				77956400218201F00008900D /* SortController.h */,
 				77956401218201F00008900D /* SortController.m */,
+				779564032182C8D00008900D /* SortHelper.h */,
+				779564042182C8D00008900D /* SortHelper.m */,
 			);
 			path = MyAlgoLearn;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779564052182C8D00008900D /* SortHelper.m in Sources */,
 				779563EF2181FE550008900D /* ViewController.m in Sources */,
 				77956402218201F00008900D /* SortController.m in Sources */,
 				779563FA2181FE580008900D /* main.m in Sources */,
