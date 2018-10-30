@@ -8,6 +8,7 @@
 
 #import "SortController.h"
 #import "SortHelper.h"
+#import "SortAlgoC.h"
 
 @interface SortController ()
 
@@ -58,26 +59,49 @@
 
 - (IBAction)bubbleSort:(id)sender
 {
-    NSMutableArray *array = [SortHelper generateRandomArray:20 rangeL:0 rangeR:20];
-    NSLog(@"%@",array);
-    [self bubbleSortArrayA:array];
-    NSLog(@"%@",array);
+    int arraySize = 20;
+    int arrayLeft = 0;
+    int arrayRight = 20;
+    int *arr = generateCRandomArray(arraySize, arrayLeft, arrayRight);
+    printCArray(arr, arraySize);
+    bubbleSort(arr, arraySize);
+    printCArray(arr, arraySize);
+    
+//    NSMutableArray *array = [SortHelper generateRandomArray:20 rangeL:0 rangeR:20];
+//    NSLog(@"%@",array);
+//    [self bubbleSortArrayA:array];
+//    NSLog(@"%@",array);
 }
 
 - (IBAction)insertSort:(id)sender
 {
-    NSMutableArray *array = [SortHelper generateRandomArray:20 rangeL:0 rangeR:20];
-    [SortHelper printArray:array];
-    [self insertSortArrayB:array];
-    [SortHelper printArray:array];
+    int arraySize = 20;
+    int arrayLeft = 0;
+    int arrayRight = 20;
+//    NSMutableArray *array = [SortHelper generateRandomArray:arraySize rangeL:arrayLeft rangeR:arrayRight];
+//    [SortHelper printArray:array];
+//    [self insertSortArrayB:array];
+//    [SortHelper printArray:array];
+    
+    int *arr = generateCRandomArray(arraySize, arrayLeft, arrayRight);
+    printCArray(arr, arraySize);
+    insertionSortOptimizeB(arr, arraySize);
+    printCArray(arr, arraySize);
 }
 
 - (IBAction)selectionSort:(id)sender
 {
-    NSMutableArray *array = [SortHelper generateRandomArray:20 rangeL:0 rangeR:20];
-    [SortHelper printArray:array];
-    [self selectSortArray:array];
-    [SortHelper printArray:array];
+    int arraySize = 20;
+    int arrayLeft = 0;
+    int arrayRight = 20;
+    int *arr = generateCRandomArray(arraySize, arrayLeft, arrayRight);
+    printCArray(arr, arraySize);
+    selectionSort(arr, arraySize);
+    printCArray(arr, arraySize);
+//    NSMutableArray *array = [SortHelper generateRandomArray:20 rangeL:0 rangeR:20];
+//    [SortHelper printArray:array];
+//    [self selectSortArray:array];
+//    [SortHelper printArray:array];
 }
 
 - (IBAction)quickSort:(id)sender
@@ -90,10 +114,18 @@
 
 - (IBAction)shellSort:(id)sender
 {
-    NSMutableArray *array = [SortHelper generateRandomArray:6 rangeL:0 rangeR:20];
-    [SortHelper printArray:array];
-    [self shellSortArray:array];;
-    [SortHelper printArray:array];
+//    NSMutableArray *array = [SortHelper generateRandomArray:6 rangeL:0 rangeR:20];
+//    [SortHelper printArray:array];
+//    [self shellSortArray:array];;
+//    [SortHelper printArray:array];
+    
+    int arraySize = 6;
+    int arrayLeft = 0;
+    int arrayRight = 20;
+    int *arr = generateCRandomArray(arraySize, arrayLeft, arrayRight);
+    printCArray(arr, arraySize);
+    shellSort(arr, arraySize);
+    printCArray(arr, arraySize);
 }
 
 #pragma mark - 冒泡排序,O(n2),基于比较
@@ -203,7 +235,7 @@
     {
         for (int i = 0 ; i < div; i ++)//分为div个组，便利每个组，进行插入排序
         {
-            for (int j = i; j < array.count - div; j += div)
+            for (int j = i; j < array.count - div; j += div)//对分组进行插入排序
             {
                 int index = j + div;
                 int indexValue = [array[index] intValue];
@@ -223,7 +255,6 @@
                 [SortHelper printArray:array];
             }
             [SortHelper printArray:array];
-            //7,7,2,20,13,20,
         }
         div = div / 2;
     }

@@ -15,6 +15,7 @@
 		779563FA2181FE580008900D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 779563F92181FE580008900D /* main.m */; };
 		77956402218201F00008900D /* SortController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77956401218201F00008900D /* SortController.m */; };
 		779564052182C8D00008900D /* SortHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 779564042182C8D00008900D /* SortHelper.m */; };
+		77956408218804660008900D /* SortAlgoC.c in Sources */ = {isa = PBXBuildFile; fileRef = 77956407218804660008900D /* SortAlgoC.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		77956401218201F00008900D /* SortController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortController.m; sourceTree = "<group>"; };
 		779564032182C8D00008900D /* SortHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortHelper.h; sourceTree = "<group>"; };
 		779564042182C8D00008900D /* SortHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortHelper.m; sourceTree = "<group>"; };
+		77956406218804660008900D /* SortAlgoC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortAlgoC.h; sourceTree = "<group>"; };
+		77956407218804660008900D /* SortAlgoC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SortAlgoC.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				77956401218201F00008900D /* SortController.m */,
 				779564032182C8D00008900D /* SortHelper.h */,
 				779564042182C8D00008900D /* SortHelper.m */,
+				77956406218804660008900D /* SortAlgoC.h */,
+				77956407218804660008900D /* SortAlgoC.c */,
 			);
 			path = MyAlgoLearn;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 				779563EF2181FE550008900D /* ViewController.m in Sources */,
 				77956402218201F00008900D /* SortController.m in Sources */,
 				779563FA2181FE580008900D /* main.m in Sources */,
+				77956408218804660008900D /* SortAlgoC.c in Sources */,
 				779563EC2181FE550008900D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
