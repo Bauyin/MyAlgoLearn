@@ -106,10 +106,17 @@
 
 - (IBAction)quickSort:(id)sender
 {
-    NSMutableArray *array = [SortHelper generateRandomArray:6 rangeL:0 rangeR:20];
-    [SortHelper printArray:array];
-    [self quickSortArray:array start:0 end:(int)array.count - 1];
-    [SortHelper printArray:array];
+//    NSMutableArray *array = [SortHelper generateRandomArray:6 rangeL:0 rangeR:20];
+//    [SortHelper printArray:array];
+//    [self quickSortArray:array start:0 end:(int)array.count - 1];
+//    [SortHelper printArray:array];
+    int arraySize = 20;
+    int arrayLeft = 0;
+    int arrayRight = 20;
+    int *arr = generateCRandomArray(arraySize, arrayLeft, arrayRight);
+    printCArray(arr, arraySize);
+    quickSort(arr,arraySize);
+    printCArray(arr, arraySize);
 }
 
 - (IBAction)shellSort:(id)sender

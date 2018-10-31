@@ -16,6 +16,7 @@
 		77956402218201F00008900D /* SortController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77956401218201F00008900D /* SortController.m */; };
 		779564052182C8D00008900D /* SortHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 779564042182C8D00008900D /* SortHelper.m */; };
 		77956408218804660008900D /* SortAlgoC.c in Sources */ = {isa = PBXBuildFile; fileRef = 77956407218804660008900D /* SortAlgoC.c */; };
+		77C75D0A21898F4E00B24691 /* SortQuestionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C75D0921898F4E00B24691 /* SortQuestionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		779564042182C8D00008900D /* SortHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortHelper.m; sourceTree = "<group>"; };
 		77956406218804660008900D /* SortAlgoC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortAlgoC.h; sourceTree = "<group>"; };
 		77956407218804660008900D /* SortAlgoC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SortAlgoC.c; sourceTree = "<group>"; };
+		77C75D0821898F4E00B24691 /* SortQuestionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortQuestionController.h; sourceTree = "<group>"; };
+		77C75D0921898F4E00B24691 /* SortQuestionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortQuestionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				779564042182C8D00008900D /* SortHelper.m */,
 				77956406218804660008900D /* SortAlgoC.h */,
 				77956407218804660008900D /* SortAlgoC.c */,
+				77C75D0821898F4E00B24691 /* SortQuestionController.h */,
+				77C75D0921898F4E00B24691 /* SortQuestionController.m */,
 			);
 			path = MyAlgoLearn;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 				779563EF2181FE550008900D /* ViewController.m in Sources */,
 				77956402218201F00008900D /* SortController.m in Sources */,
 				779563FA2181FE580008900D /* main.m in Sources */,
+				77C75D0A21898F4E00B24691 /* SortQuestionController.m in Sources */,
 				77956408218804660008900D /* SortAlgoC.c in Sources */,
 				779563EC2181FE550008900D /* AppDelegate.m in Sources */,
 			);

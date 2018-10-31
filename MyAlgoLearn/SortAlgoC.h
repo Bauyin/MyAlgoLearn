@@ -40,4 +40,16 @@ void bubbleSort(int arr[], int n);
  */
 void shellSort(int arr[], int n);
 
+/*
+ 快速排序
+ */
+void quickSort(int arr[], int n);
+
+int *intersectionOfTwoArray(int arrA[],int aSize, int arrB[],int bSize);
+int* intersection(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnSize);
+
+int *distinctArray(int arr[], int n);
+
+int *distinctArrayB(int arr[], int n);
+
 #endif /* SortAlgoC_h */

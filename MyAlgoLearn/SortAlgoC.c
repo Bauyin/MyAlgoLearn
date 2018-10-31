@@ -7,6 +7,9 @@
 //
 
 #include "SortAlgoC.h"
+#include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
 
 void printSortArray(int arr[], int n)
 {
@@ -149,7 +152,167 @@ void mergeSort(int arr, int n)
 }
 
 #pragma mark - 快速排序
-void quickSort(int arr, int n)
+/*
+ 挖坑法
+ 初始值取第一个元素,初始坑位在左侧，从右侧查找小于Key的值，填在坑位
+ */
+int quickSortPartitionA(int arr[], int left, int right)
 {
+    int keyValue = arr[left];
+    int _left = left;
+    int _right = right;
+    while (_left < _right)
+    {
+        while (_left < _right && arr[_right] >= keyValue)
+        {
+            _right --;
+        }
+        arr[_left] = arr[_right];
+        
+        while (_left < _right && arr[_left] <= keyValue)
+        {
+            _left ++;
+        }
+        
+        arr[_right] = arr[_left];
+    }
+    arr[_left] = keyValue;
+    return _left;
+}
+
+/*
+ 挖坑法
+ 初始值取最后一个元素,初始坑位在右侧，从左侧查找大于Key的值，填在坑位
+ */
+int quickSortPartitionB(int arr[], int left, int right)
+{
+    int keyValue = arr[right];
+    int _left = left;
+    int _right = right;
+    while (_left < _right)
+    {
+        while (_left < _right && arr[_left] <= keyValue)
+        {
+            _left ++;
+        }
+        arr[_right] = arr[_left];
+        while (_left < _right && arr[_right] >= keyValue)
+        {
+            _right --;
+        }
+        arr[_left] = arr[_right];
+    }
+    arr[_right] = keyValue;
+    return _right;
+}
+
+void _quickSort(int arr[], int left, int right)
+{
+    if (left >= right)
+    {
+        return;
+    }
+    int partition = quickSortPartitionB(arr, left, right);
+    _quickSort(arr, left, partition - 1);
+    _quickSort(arr, partition + 1, right);
+}
+
+void quickSort(int arr[], int n)
+{
+    _quickSort(arr,0, n-1);
+}
+
+#pragma mark - 思考题：两个数组求交集
+int * intersectionOfTwoArray(int arrA[],int aSize, int arrB[],int bSize)
+{
+    int *arr = (int *)malloc(sizeof(int) * (aSize+bSize));
+    int index = 0;
+    for (int i = 0; i < aSize; i ++)
+    {
+        for (int j = 0; j < bSize; j ++)
+        {
+            if (arrA[i] == arrB[j])
+            {
+                arr[index] = arrA[i];
+                index ++;
+                break;
+            }
+        }
+    }
+    printSortArray(arr, index);
+    return arr;
+}
+
+int* intersection(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnSize)
+{
+    int *arr = (int *)malloc(sizeof(int) * (nums1Size+nums2Size));
+    int index = 0;
+    for (int i = 0; i < nums1Size; i ++)
+    {
+        for (int j = 0; j < nums2Size; j ++)
+        {
+            if (nums1[i] == nums2[j])
+            {
+                arr[index] = nums1[i];
+                index ++;
+                break;
+            }
+        }
+    }
+    returnSize = &index;
+    printSortArray(arr, index);
+    return arr;
+}
+#pragma mark - 数组去重
+/*
+ 数组去重，思路1
+ 定义一个新数组，遍历老数组中的元素，和新数组中的元素依次比较，若都不相同放入新数组，否则不处理
+ */
+int *distinctArray(int arr[], int n)
+{
+    int *newArr = (int *)malloc(sizeof(int) * n);
+    int newArrSize = 0;//新数组中元素的个数
+    for (int i = 0; i < n; i ++)
+    {
+        int keyValue = arr[i];
+        int j = newArrSize - 1;//新数组中最后一个元素
+        while (j >= 0 && newArr[j] != keyValue)
+        {
+            j --;
+        }
+        if (j < 0)
+        {
+            newArr[newArrSize] = keyValue;
+            newArrSize ++;
+            printSortArray(newArr, newArrSize);
+        }
+    }
+    return newArr;
+}
+
+/*
+ 如果知道arr中整数的最大值，生成一个临时数组，使用原有数组中的值，作为临时数组的下标，如果临时数组的下标对应值为1，表示此值重复
+ */
+int *distinctArrayB(int arr[], int n)
+{
+    int *tempArr = malloc(sizeof(int) * n * n);
+    memset(tempArr,0,n * n);
     
+    int *newArr = malloc(sizeof(int) * n);
+    int newArrSize = 0;
+    memset(newArr,0,n);
+
+    for (int i = 0; i < n; i ++)
+    {
+        int tag = arr[i];
+        int tagValue = tempArr[tag];
+        if (!tagValue)
+        {
+            tempArr[tag] = 1;
+            newArr[newArrSize] = tag;
+            newArrSize ++;
+            printSortArray(newArr, newArrSize);
+        }
+    }
+    return newArr;
 }
