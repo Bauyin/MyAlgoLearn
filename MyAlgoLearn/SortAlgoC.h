@@ -46,6 +46,8 @@ void shellSort(int arr[], int n);
 void quickSort(int arr[], int n);
 
 int *intersectionOfTwoArray(int arrA[],int aSize, int arrB[],int bSize);
+int *intersectionOfTwoArrayB(int arrA[],int aSize, int arrB[],int bSize,int* returnSize);
+
 int* intersection(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnSize);
 
 int *distinctArray(int arr[], int n);

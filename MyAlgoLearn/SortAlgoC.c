@@ -243,6 +243,36 @@ int * intersectionOfTwoArray(int arrA[],int aSize, int arrB[],int bSize)
     return arr;
 }
 
+int *intersectionOfTwoArrayB(int arrA[],int aSize, int arrB[],int bSize,int* returnSize)
+{
+    quickSort(arrA, aSize);
+    quickSort(arrB, bSize);
+    int newSizeMax = aSize > bSize ? aSize : bSize;
+    int *newArr = (int *)malloc(sizeof(int) * newSizeMax);
+    int i = 0,j = 0,newSize = 0;
+    while (i < aSize && j < bSize)
+    {
+        if (arrA[i] < arrB[j])
+        {
+            i ++;
+        }
+        else if (arrA[i] > arrB[j])
+        {
+            j ++;
+        }
+        else
+        {
+            newArr[newSize] = arrA[i];
+            i ++;
+            j ++;
+            newSize ++;
+        }
+    }
+    *returnSize = newSize;
+    return newArr;
+}
+
+
 int* intersection(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnSize)
 {
     int *arr = (int *)malloc(sizeof(int) * (nums1Size+nums2Size));

@@ -23,11 +23,14 @@
 
 - (IBAction)arrayInterSection:(id)sender
 {
-    int arrA[4] = {1,2,2,1};
-    int arrB[2] = {2,2};
-    int *returnSize;
-    int *arr = intersection(arrA, 4, arrB, 2,returnSize);
-    
+    int aSize = 5;
+    int bSize = 3;
+    int arrA[] = {3,1,2,2,1};
+    int arrB[] = {2,2,3};
+    int tmp = 0;
+    int *returnSize = &tmp;
+    int *arr = intersectionOfTwoArrayB(arrA, aSize, arrB, bSize,returnSize);
+    printCArray(arr, *returnSize);
 }
 
 - (IBAction)arrayDistinct:(id)sender
