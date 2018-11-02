@@ -16,7 +16,13 @@ typedef struct LNode//单链表节点
     struct LNode *next;
 }LNode;
 
-void createList
+/*
+ 创建一个长度为n的单链表
+ */
+LNode * createSignleList(int n);
+
+void printSignleList(LNode *list);
+
 @interface LinkedList : NSObject
 
 @end

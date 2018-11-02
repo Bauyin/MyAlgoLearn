@@ -12,6 +12,7 @@
 		77077EAF218B358E00391900 /* SortAlgoC.c in Sources */ = {isa = PBXBuildFile; fileRef = 77077EA6218B358D00391900 /* SortAlgoC.c */; };
 		77077EB0218B358E00391900 /* SortQuestionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77077EAB218B358D00391900 /* SortQuestionController.m */; };
 		77077EB3218B35B300391900 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 77077EB2218B35B300391900 /* LinkedList.m */; };
+		77077EB6218C55FC00391900 /* LinkedListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 77077EB5218C55FC00391900 /* LinkedListVC.m */; };
 		779563EC2181FE550008900D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 779563EB2181FE550008900D /* AppDelegate.m */; };
 		779563F22181FE550008900D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779563F02181FE550008900D /* Main.storyboard */; };
 		779563F42181FE580008900D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779563F32181FE580008900D /* Assets.xcassets */; };
@@ -30,6 +31,8 @@
 		77077EAB218B358D00391900 /* SortQuestionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortQuestionController.m; sourceTree = "<group>"; };
 		77077EB1218B35B300391900 /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
 		77077EB2218B35B300391900 /* LinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
+		77077EB4218C55FC00391900 /* LinkedListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedListVC.h; sourceTree = "<group>"; };
+		77077EB5218C55FC00391900 /* LinkedListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedListVC.m; sourceTree = "<group>"; };
 		779563E72181FE550008900D /* MyAlgoLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAlgoLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779563EA2181FE550008900D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		779563EB2181FE550008900D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 			children = (
 				77077EB1218B35B300391900 /* LinkedList.h */,
 				77077EB2218B35B300391900 /* LinkedList.m */,
+				77077EB4218C55FC00391900 /* LinkedListVC.h */,
+				77077EB5218C55FC00391900 /* LinkedListVC.m */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				77077EB0218B358E00391900 /* SortQuestionController.m in Sources */,
 				779563FA2181FE580008900D /* main.m in Sources */,
 				77077EAF218B358E00391900 /* SortAlgoC.c in Sources */,
+				77077EB6218C55FC00391900 /* LinkedListVC.m in Sources */,
 				779563EC2181FE550008900D /* AppDelegate.m in Sources */,
 				77077EAE218B358E00391900 /* SortHelper.m in Sources */,
 			);

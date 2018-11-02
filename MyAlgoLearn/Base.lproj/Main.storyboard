@@ -49,6 +49,14 @@
                                     <segue destination="HJM-Kk-HmF" kind="show" id="vGs-6L-l3X"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAU-cJ-RCF">
+                                <rect key="frame" x="128" y="350" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="链表"/>
+                                <connections>
+                                    <segue destination="Xzt-RL-oJV" kind="show" id="ZKS-2a-dYB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7wc-SP-cqb"/>
@@ -91,6 +99,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INT-zZ-yn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="828" y="-76"/>
+        </scene>
+        <!--Linked ListVC-->
+        <scene sceneID="w7g-5h-wjF">
+            <objects>
+                <viewController id="Xzt-RL-oJV" customClass="LinkedListVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GzR-RK-kPf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZA-s1-viX">
+                                <rect key="frame" x="107" y="124" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="遍历长度为n的单链表"/>
+                                <connections>
+                                    <action selector="arrayInterSection:" destination="HJM-Kk-HmF" eventType="touchUpInside" id="cCZ-tC-EBf"/>
+                                    <action selector="printListAction:" destination="Xzt-RL-oJV" eventType="touchUpInside" id="tnb-kr-naY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1ZI-Vr-SNo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZfX-N8-7dO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="659"/>
         </scene>
         <!--Sort Controller-->
         <scene sceneID="Avh-DS-dmM">
