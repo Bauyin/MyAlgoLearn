@@ -7,37 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77077EAD218B358D00391900 /* SortController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77077EA4218B358D00391900 /* SortController.m */; };
+		77077EAE218B358E00391900 /* SortHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 77077EA5218B358D00391900 /* SortHelper.m */; };
+		77077EAF218B358E00391900 /* SortAlgoC.c in Sources */ = {isa = PBXBuildFile; fileRef = 77077EA6218B358D00391900 /* SortAlgoC.c */; };
+		77077EB0218B358E00391900 /* SortQuestionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77077EAB218B358D00391900 /* SortQuestionController.m */; };
+		77077EB3218B35B300391900 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 77077EB2218B35B300391900 /* LinkedList.m */; };
 		779563EC2181FE550008900D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 779563EB2181FE550008900D /* AppDelegate.m */; };
-		779563EF2181FE550008900D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779563EE2181FE550008900D /* ViewController.m */; };
 		779563F22181FE550008900D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779563F02181FE550008900D /* Main.storyboard */; };
 		779563F42181FE580008900D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779563F32181FE580008900D /* Assets.xcassets */; };
 		779563F72181FE580008900D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779563F52181FE580008900D /* LaunchScreen.storyboard */; };
 		779563FA2181FE580008900D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 779563F92181FE580008900D /* main.m */; };
-		77956402218201F00008900D /* SortController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77956401218201F00008900D /* SortController.m */; };
-		779564052182C8D00008900D /* SortHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 779564042182C8D00008900D /* SortHelper.m */; };
-		77956408218804660008900D /* SortAlgoC.c in Sources */ = {isa = PBXBuildFile; fileRef = 77956407218804660008900D /* SortAlgoC.c */; };
-		77C75D0A21898F4E00B24691 /* SortQuestionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C75D0921898F4E00B24691 /* SortQuestionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77077EA4218B358D00391900 /* SortController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortController.m; sourceTree = "<group>"; };
+		77077EA5218B358D00391900 /* SortHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortHelper.m; sourceTree = "<group>"; };
+		77077EA6218B358D00391900 /* SortAlgoC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SortAlgoC.c; sourceTree = "<group>"; };
+		77077EA7218B358D00391900 /* SortQuestionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortQuestionController.h; sourceTree = "<group>"; };
+		77077EA8218B358D00391900 /* SortController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortController.h; sourceTree = "<group>"; };
+		77077EA9218B358D00391900 /* SortHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortHelper.h; sourceTree = "<group>"; };
+		77077EAA218B358D00391900 /* SortAlgoC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortAlgoC.h; sourceTree = "<group>"; };
+		77077EAB218B358D00391900 /* SortQuestionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortQuestionController.m; sourceTree = "<group>"; };
+		77077EB1218B35B300391900 /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		77077EB2218B35B300391900 /* LinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
 		779563E72181FE550008900D /* MyAlgoLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAlgoLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779563EA2181FE550008900D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		779563EB2181FE550008900D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		779563ED2181FE550008900D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		779563EE2181FE550008900D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		779563F12181FE550008900D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		779563F32181FE580008900D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		779563F62181FE580008900D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		779563F82181FE580008900D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		779563F92181FE580008900D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		77956400218201F00008900D /* SortController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortController.h; sourceTree = "<group>"; };
-		77956401218201F00008900D /* SortController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortController.m; sourceTree = "<group>"; };
-		779564032182C8D00008900D /* SortHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortHelper.h; sourceTree = "<group>"; };
-		779564042182C8D00008900D /* SortHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortHelper.m; sourceTree = "<group>"; };
-		77956406218804660008900D /* SortAlgoC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortAlgoC.h; sourceTree = "<group>"; };
-		77956407218804660008900D /* SortAlgoC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SortAlgoC.c; sourceTree = "<group>"; };
-		77C75D0821898F4E00B24691 /* SortQuestionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortQuestionController.h; sourceTree = "<group>"; };
-		77C75D0921898F4E00B24691 /* SortQuestionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortQuestionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +51,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77077EA3218B358D00391900 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				77077EA4218B358D00391900 /* SortController.m */,
+				77077EA5218B358D00391900 /* SortHelper.m */,
+				77077EA6218B358D00391900 /* SortAlgoC.c */,
+				77077EA7218B358D00391900 /* SortQuestionController.h */,
+				77077EA8218B358D00391900 /* SortController.h */,
+				77077EA9218B358D00391900 /* SortHelper.h */,
+				77077EAA218B358D00391900 /* SortAlgoC.h */,
+				77077EAB218B358D00391900 /* SortQuestionController.m */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		77077EAC218B358D00391900 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				77077EB1218B35B300391900 /* LinkedList.h */,
+				77077EB2218B35B300391900 /* LinkedList.m */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
 		779563DE2181FE550008900D = {
 			isa = PBXGroup;
 			children = (
@@ -70,23 +94,15 @@
 		779563E92181FE550008900D /* MyAlgoLearn */ = {
 			isa = PBXGroup;
 			children = (
+				77077EAC218B358D00391900 /* LinkedList */,
+				77077EA3218B358D00391900 /* Sort */,
 				779563EA2181FE550008900D /* AppDelegate.h */,
 				779563EB2181FE550008900D /* AppDelegate.m */,
-				779563ED2181FE550008900D /* ViewController.h */,
-				779563EE2181FE550008900D /* ViewController.m */,
 				779563F02181FE550008900D /* Main.storyboard */,
 				779563F32181FE580008900D /* Assets.xcassets */,
 				779563F52181FE580008900D /* LaunchScreen.storyboard */,
 				779563F82181FE580008900D /* Info.plist */,
 				779563F92181FE580008900D /* main.m */,
-				77956400218201F00008900D /* SortController.h */,
-				77956401218201F00008900D /* SortController.m */,
-				779564032182C8D00008900D /* SortHelper.h */,
-				779564042182C8D00008900D /* SortHelper.m */,
-				77956406218804660008900D /* SortAlgoC.h */,
-				77956407218804660008900D /* SortAlgoC.c */,
-				77C75D0821898F4E00B24691 /* SortQuestionController.h */,
-				77C75D0921898F4E00B24691 /* SortQuestionController.m */,
 			);
 			path = MyAlgoLearn;
 			sourceTree = "<group>";
@@ -161,13 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				779564052182C8D00008900D /* SortHelper.m in Sources */,
-				779563EF2181FE550008900D /* ViewController.m in Sources */,
-				77956402218201F00008900D /* SortController.m in Sources */,
+				77077EAD218B358D00391900 /* SortController.m in Sources */,
+				77077EB3218B35B300391900 /* LinkedList.m in Sources */,
+				77077EB0218B358E00391900 /* SortQuestionController.m in Sources */,
 				779563FA2181FE580008900D /* main.m in Sources */,
-				77C75D0A21898F4E00B24691 /* SortQuestionController.m in Sources */,
-				77956408218804660008900D /* SortAlgoC.c in Sources */,
+				77077EAF218B358E00391900 /* SortAlgoC.c in Sources */,
 				779563EC2181FE550008900D /* AppDelegate.m in Sources */,
+				77077EAE218B358E00391900 /* SortHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
