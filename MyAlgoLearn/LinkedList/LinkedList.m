@@ -98,4 +98,9 @@ LNode * insertNode(LNode *list,int i, int e)
     
 }
 
+void deleteListNode(LNode *list, int n)
+{
+    
+}
+
 @end

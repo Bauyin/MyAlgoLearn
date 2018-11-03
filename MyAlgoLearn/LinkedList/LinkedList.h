@@ -34,12 +34,18 @@ LNode *getSignleListNode(LNode *list, int e);
 /*
  在单链表list中的第i个元素之前，插入元素e
  */
-LNode * insertNode(LNode *list,int i, int e);
+LNode *insertNode(LNode *list,int i, int e);
 
 /*
  单链表反转
  */
 void signleListReverse(LNode *list);
+
+/*
+ 删除链表倒数第 n 个结点
+ 使用快慢指针的思路
+ */
+void deleteListNode(LNode *list, int n);
 
 @interface LinkedList : NSObject
 
