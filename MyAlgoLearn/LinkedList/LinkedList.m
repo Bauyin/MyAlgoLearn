@@ -54,6 +54,48 @@ void printSignleList(LNode *list)
             tmpNode = tmpNode -> next;
         }
     }
+    printf("\n");
+}
+
+void signleListReverse(LNode *list)
+{
+    
+}
+
+LNode *getSignleListNode(LNode *list, int e)
+{
+    return NULL;
+}
+
+/*
+ 在单链表list中的第i个元素之前，插入元素e
+ */
+LNode * insertNode(LNode *list,int i, int e)
+{
+    if (i == 1)//在头部之前插入，更换头部
+    {
+        LNode *eNode = malloc(sizeof(LNode));
+        eNode->data = e;
+        eNode->next = list;
+        return eNode;
+    }
+    
+    int j = 0;
+    LNode *iNode = list;
+    while (1)//i元素之前插入，需要在第i-1个元素之后插入
+    {
+        if (j + 1 == i - 1)
+        {
+            LNode *eNode = malloc(sizeof(LNode));
+            eNode->next = iNode->next;
+            eNode->data = e;
+            iNode->next = eNode;
+            return list;
+        }
+        iNode = iNode->next;
+        j ++;
+    }
+    
 }
 
 @end

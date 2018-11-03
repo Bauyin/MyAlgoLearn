@@ -25,4 +25,17 @@
     LNode *list = createSignleList(20);
     printSignleList(list);
 }
+
+- (IBAction)insertListAction:(id)sender
+{
+    LNode *list = createSignleList(5);
+    printSignleList(list);
+    list = insertNode(list, 1, 9);
+    printSignleList(list);
+    list = insertNode(list, 6, 11);
+    printSignleList(list);
+    list = insertNode(list, 3, 12);
+    printSignleList(list);
+}
+
 @end

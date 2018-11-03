@@ -113,8 +113,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="遍历长度为n的单链表"/>
                                 <connections>
-                                    <action selector="arrayInterSection:" destination="HJM-Kk-HmF" eventType="touchUpInside" id="cCZ-tC-EBf"/>
                                     <action selector="printListAction:" destination="Xzt-RL-oJV" eventType="touchUpInside" id="tnb-kr-naY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBU-6J-oc4">
+                                <rect key="frame" x="142" y="179" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="单链表插入"/>
+                                <connections>
+                                    <action selector="insertListAction:" destination="Xzt-RL-oJV" eventType="touchUpInside" id="8Xe-hX-v2u"/>
                                 </connections>
                             </button>
                         </subviews>
