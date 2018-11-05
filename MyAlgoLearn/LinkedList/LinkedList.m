@@ -152,4 +152,71 @@ LNode *findMidNodeInList(LNode *list)
     return slow->next;
 }
 
+LNode *mergeTwoSortedList(LNode *listA, LNode *listB)
+{
+    LNode *pA = listA;
+    LNode *pB = listB;
+    LNode *p = NULL;
+    if (pA->data < pB->data)//设置当前节点和头节点
+    {
+        p = pA;
+        pA = pA->next;
+    }
+    else
+    {
+        p = pB;
+        pB = pB->next;
+    }
+    LNode *head = p;
+    
+    while (pA != NULL && pB != NULL)
+    {
+        if (pA->data < pB->data)
+        {
+            p -> next = pA;
+            p = pA;
+            pA = pA->next;
+        }
+        else
+        {
+            p -> next = pB;
+            p = pB;
+            pB = pB->next;
+        }
+    }
+    if (pA == NULL)
+    {
+        p->next = pB;
+    }
+    else if (pB == NULL)
+    {
+        p->next = pA;
+    }
+    return head;
+}
+
+LNode *mergeTwoSortedListB(LNode *listA, LNode *listB)
+{
+    if (listA == NULL)
+    {
+        return listB;
+    }
+    if (listB == NULL)
+    {
+        return listA;
+    }
+    
+    LNode *newListHead = NULL;
+    if (listA->data < listB->data)//设置当前节点和头节点
+    {
+        newListHead = listA;
+        newListHead->next = mergeTwoSortedListB(listA->next, listB);
+    }
+    else
+    {
+        newListHead = listB;
+        newListHead->next = mergeTwoSortedListB(listA, listB->next);;
+    }
+    return newListHead;
+}
 @end

@@ -52,6 +52,7 @@
     list = signleListReverse(list);
     printSignleList(list);
 }
+
 - (IBAction)findListMiddleAction:(id)sender
 {
     LNode *list1 = createSignleList(1);
@@ -88,5 +89,17 @@
     printSignleList(list7);
     middle = findMidNodeInList(list7);
     NSLog(@"7--%d",middle->data);
+}
+
+- (IBAction)mergeListAction:(id)sender
+{
+    LNode *listA = createSignleList(3);
+    printSignleList(listA);
+
+    LNode *listB = createSignleList(6);
+    printSignleList(listB);
+
+    LNode *list = mergeTwoSortedListB(listA, listB);
+    printSignleList(list);
 }
 @end

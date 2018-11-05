@@ -53,6 +53,19 @@ LNode *deleteListNode(LNode *list, int n);
  思路2:快慢指针法,遍历链表时,快指针每次前进两个,慢指针前进一个;当快指针指向尾部时,慢指针指向中点
  */
 LNode *findMidNodeInList(LNode *list);
+
+/*
+ 合并两个有序的单链表
+ 思路1:两个指针分别遍历两个链表，比较合并
+ */
+LNode *mergeTwoSortedList(LNode *listA, LNode *listB);
+
+/*
+ 合并两个有序的单链表
+ 思路2:每次递归获取头节点
+ */
+LNode *mergeTwoSortedListB(LNode *listA, LNode *listB);
+
 @interface LinkedList : NSObject
 
 @end
