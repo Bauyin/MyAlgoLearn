@@ -156,6 +156,14 @@
                                     <action selector="mergeListAction:" destination="Xzt-RL-oJV" eventType="touchUpInside" id="3xT-6k-nbD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0c-oM-Yxc">
+                                <rect key="frame" x="126" y="452" width="123" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="LRU缓存淘汰策略"/>
+                                <connections>
+                                    <action selector="lruAction:" destination="Xzt-RL-oJV" eventType="touchUpInside" id="tSw-qG-h6M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1ZI-Vr-SNo"/>

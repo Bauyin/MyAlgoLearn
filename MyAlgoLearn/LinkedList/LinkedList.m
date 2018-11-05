@@ -131,9 +131,7 @@ LNode * deleteListNode(LNode *list, int n)
         slowP->next = slowP->next->next;
         return slowP;
     }
-
 }
-
 
 LNode *findMidNodeInList(LNode *list)
 {
@@ -218,5 +216,68 @@ LNode *mergeTwoSortedListB(LNode *listA, LNode *listB)
         newListHead->next = mergeTwoSortedListB(listA, listB->next);;
     }
     return newListHead;
+}
+
+int cachedListSize = 10;
+LNode *cachedListHead = NULL;
+LNode *lruAlgo(int target)
+{
+    if (cachedListHead == NULL)//构造缓存链表
+    {
+        LNode *p = NULL;
+        for (int i = 0; i < cachedListSize; i++)
+        {
+            LNode *tmp = malloc(sizeof(LNode));
+            tmp->data = i;
+            tmp->next = NULL;
+            if (p == NULL)
+            {
+                p = tmp;
+                cachedListHead = tmp;
+            }
+            else
+            {
+                p->next = tmp;
+                p = tmp;
+            }
+        }
+    }
+    NSLog(@"查找目标之前");
+    printSignleList(cachedListHead);
+    
+    LNode *targetNode = cachedListHead;
+    LNode *preTargetNode = NULL;
+    while (targetNode != NULL)
+    {
+        if (targetNode->data != target)
+        {
+            preTargetNode = targetNode;
+            targetNode = targetNode->next;
+        }
+        else
+            break;
+    }
+    
+    if (targetNode == NULL)//缓存中没有此节点
+    {
+        //删除尾部节点
+        deleteListNode(cachedListHead, 1);
+
+        //将此节点设置为新的头节点
+        LNode *node = malloc(sizeof(LNode));
+        node->data = target;
+        node->next = cachedListHead;
+        cachedListHead = node;
+    }
+    else if (preTargetNode != NULL)//缓存中有此节点,并且不是头节点,将此节点设置为头节点
+    {
+        preTargetNode->next = targetNode->next;
+        targetNode->next = cachedListHead;
+        cachedListHead = targetNode;
+    }
+    
+    NSLog(@"查找目标之后");
+    printSignleList(cachedListHead);
+    return cachedListHead;
 }
 @end

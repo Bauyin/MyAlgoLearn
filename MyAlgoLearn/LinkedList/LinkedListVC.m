@@ -102,4 +102,22 @@
     LNode *list = mergeTwoSortedListB(listA, listB);
     printSignleList(list);
 }
+
+- (IBAction)lruAction:(id)sender
+{
+    NSLog(@"查找11");
+    lruAlgo(11);
+    
+    NSLog(@"查找5");
+    lruAlgo(5);
+    
+    NSLog(@"查找6");
+    lruAlgo(6);
+    
+    NSLog(@"查找33");
+    lruAlgo(33);
+    
+    NSLog(@"查找0");
+    lruAlgo(0);
+}
 @end
