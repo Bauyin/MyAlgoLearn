@@ -57,6 +57,14 @@
                                     <segue destination="Xzt-RL-oJV" kind="show" id="ZKS-2a-dYB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szk-KJ-89C">
+                                <rect key="frame" x="128" y="209" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="队列"/>
+                                <connections>
+                                    <segue destination="SuD-Zw-F4l" kind="show" id="8WU-H7-4Oh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7wc-SP-cqb"/>
@@ -99,6 +107,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INT-zZ-yn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="828" y="-76"/>
+        </scene>
+        <!--QueueVC-->
+        <scene sceneID="abd-On-SJm">
+            <objects>
+                <viewController id="SuD-Zw-F4l" customClass="QueueVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ObL-NY-ebg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mW3-Z5-Iic">
+                                <rect key="frame" x="156" y="146" width="62" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="enQueue"/>
+                                <connections>
+                                    <action selector="enQueueAction:" destination="SuD-Zw-F4l" eventType="touchUpInside" id="nou-7O-tBl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAq-Ow-l0z">
+                                <rect key="frame" x="156" y="196" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="deQueue"/>
+                                <connections>
+                                    <action selector="deQueueAction:" destination="SuD-Zw-F4l" eventType="touchUpInside" id="Dao-ea-Emc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1BX-d3-fDl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CP1-dh-pm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-119.2" y="669.71514242878561"/>
         </scene>
         <!--Linked ListVC-->
         <scene sceneID="w7g-5h-wjF">
