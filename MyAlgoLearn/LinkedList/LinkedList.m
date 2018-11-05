@@ -59,17 +59,16 @@ void printSignleList(LNode *list)
 
 LNode *signleListReverse(LNode *list)
 {
-    LNode *now = list;
-    LNode *next = now->next;
-    now->next = NULL;//头节点变为尾节点
+    LNode *next = list->next;
+    list->next = NULL;//头节点变为尾节点
     while (next != NULL)
     {
         LNode *tmp = next -> next;
-        next->next = now;
-        now = next;
+        next->next = list;
+        list = next;
         next = tmp;
     }
-    return now;
+    return list;
 }
 
 LNode *getSignleListNode(LNode *list, int e)

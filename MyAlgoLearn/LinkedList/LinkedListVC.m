@@ -47,7 +47,7 @@
 
 - (IBAction)reverseSignleListAction:(id)sender
 {
-    LNode *list = createSignleList(8);
+    LNode *list = createSignleList(1);
     printSignleList(list);
     list = signleListReverse(list);
     printSignleList(list);
