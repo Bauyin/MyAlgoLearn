@@ -52,4 +52,41 @@
     list = signleListReverse(list);
     printSignleList(list);
 }
+- (IBAction)findListMiddleAction:(id)sender
+{
+    LNode *list1 = createSignleList(1);
+    printSignleList(list1);
+    LNode *middle = findMidNodeInList(list1);
+    NSLog(@"1--%d",middle->data);
+    
+    LNode *list2 = createSignleList(2);
+    printSignleList(list2);
+    middle = findMidNodeInList(list2);
+    NSLog(@"2--%d",middle->data);
+    
+    LNode *list3 = createSignleList(3);
+    printSignleList(list3);
+    middle = findMidNodeInList(list3);
+    NSLog(@"3--%d",middle->data);
+    
+    LNode *list4 = createSignleList(4);
+    printSignleList(list4);
+    middle = findMidNodeInList(list4);
+    NSLog(@"4--%d",middle->data);
+    
+    LNode *list5 = createSignleList(5);
+    printSignleList(list5);
+    middle = findMidNodeInList(list5);
+    NSLog(@"5--%d",middle->data);
+    
+    LNode *list6 = createSignleList(6);
+    printSignleList(list6);
+    middle = findMidNodeInList(list6);
+    NSLog(@"6--%d",middle->data);
+    
+    LNode *list7 = createSignleList(7);
+    printSignleList(list7);
+    middle = findMidNodeInList(list7);
+    NSLog(@"7--%d",middle->data);
+}
 @end

@@ -47,7 +47,12 @@ LNode *signleListReverse(LNode *list);
  */
 LNode *deleteListNode(LNode *list, int n);
 
-
+/*
+ 查找链表的中间节点
+ 思路1:从头到尾遍历链表,查找出链表节点个数n;然后再按照n/2遍历;
+ 思路2:快慢指针法,遍历链表时,快指针每次前进两个,慢指针前进一个;当快指针指向尾部时,慢指针指向中点
+ */
+LNode *findMidNodeInList(LNode *list);
 @interface LinkedList : NSObject
 
 @end

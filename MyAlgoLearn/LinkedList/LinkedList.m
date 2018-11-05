@@ -134,4 +134,22 @@ LNode * deleteListNode(LNode *list, int n)
 
 }
 
+
+LNode *findMidNodeInList(LNode *list)
+{
+    LNode *slow = list;
+    if (slow->next == NULL || slow->next->next == NULL)
+    {
+        return slow;
+    }
+
+    LNode *fast = slow->next->next;
+    while (fast -> next != NULL && fast->next->next != NULL)
+    {
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+    return slow->next;
+}
+
 @end

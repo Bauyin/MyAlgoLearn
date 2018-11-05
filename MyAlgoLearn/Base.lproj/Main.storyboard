@@ -140,6 +140,14 @@
                                     <action selector="reverseSignleListAction:" destination="Xzt-RL-oJV" eventType="touchUpInside" id="0wH-nm-xji"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0a-OP-6nT">
+                                <rect key="frame" x="149" y="336" width="77" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="单链表中点"/>
+                                <connections>
+                                    <action selector="findListMiddleAction:" destination="Xzt-RL-oJV" eventType="touchUpInside" id="OY1-Vn-4Ym"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1ZI-Vr-SNo"/>
