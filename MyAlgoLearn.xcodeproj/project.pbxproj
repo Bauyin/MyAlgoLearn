@@ -57,13 +57,13 @@
 		77077EA3218B358D00391900 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
-				77077EA4218B358D00391900 /* SortController.m */,
-				77077EA5218B358D00391900 /* SortHelper.m */,
 				77077EA6218B358D00391900 /* SortAlgoC.c */,
-				77077EA7218B358D00391900 /* SortQuestionController.h */,
-				77077EA8218B358D00391900 /* SortController.h */,
-				77077EA9218B358D00391900 /* SortHelper.h */,
 				77077EAA218B358D00391900 /* SortAlgoC.h */,
+				77077EA8218B358D00391900 /* SortController.h */,
+				77077EA4218B358D00391900 /* SortController.m */,
+				77077EA9218B358D00391900 /* SortHelper.h */,
+				77077EA5218B358D00391900 /* SortHelper.m */,
+				77077EA7218B358D00391900 /* SortQuestionController.h */,
 				77077EAB218B358D00391900 /* SortQuestionController.m */,
 			);
 			path = Sort;

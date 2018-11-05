@@ -57,9 +57,19 @@ void printSignleList(LNode *list)
     printf("\n");
 }
 
-void signleListReverse(LNode *list)
+LNode *signleListReverse(LNode *list)
 {
-    
+    LNode *now = list;
+    LNode *next = now->next;
+    now->next = NULL;//头节点变为尾节点
+    while (next != NULL)
+    {
+        LNode *tmp = next -> next;
+        next->next = now;
+        now = next;
+        next = tmp;
+    }
+    return now;
 }
 
 LNode *getSignleListNode(LNode *list, int e)
@@ -98,9 +108,31 @@ LNode * insertNode(LNode *list,int i, int e)
     
 }
 
-void deleteListNode(LNode *list, int n)
+LNode * deleteListNode(LNode *list, int n)
 {
-    
+    LNode *p = list;
+    while (n > 0)
+    {
+        n --;
+        p = p->next;
+    }
+    if(p == NULL)//要删除的是头节点
+    {
+        list = list->next;
+        return list;
+    }
+    else
+    {
+        LNode *slowP = list;
+        while (p->next != NULL)
+        {
+            p = p->next;
+            slowP = slowP->next;
+        }
+        slowP->next = slowP->next->next;
+        return slowP;
+    }
+
 }
 
 @end

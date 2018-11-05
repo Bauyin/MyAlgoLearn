@@ -124,6 +124,22 @@
                                     <action selector="insertListAction:" destination="Xzt-RL-oJV" eventType="touchUpInside" id="8Xe-hX-v2u"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjH-M4-70V">
+                                <rect key="frame" x="115" y="233" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="删除倒数第n个元素"/>
+                                <connections>
+                                    <action selector="deleteListAction:" destination="Xzt-RL-oJV" eventType="touchUpInside" id="hFC-DN-OmU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCm-zs-jJG">
+                                <rect key="frame" x="149" y="286" width="77" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="单链表反转"/>
+                                <connections>
+                                    <action selector="reverseSignleListAction:" destination="Xzt-RL-oJV" eventType="touchUpInside" id="0wH-nm-xji"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1ZI-Vr-SNo"/>
@@ -131,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZfX-N8-7dO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="659"/>
+            <point key="canvasLocation" x="828" y="658.92053973013503"/>
         </scene>
         <!--Sort Controller-->
         <scene sceneID="Avh-DS-dmM">

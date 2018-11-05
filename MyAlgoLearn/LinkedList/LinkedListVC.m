@@ -38,4 +38,18 @@
     printSignleList(list);
 }
 
+- (IBAction)deleteListAction:(id)sender {
+    LNode *list = createSignleList(5);
+    printSignleList(list);
+    list = deleteListNode(list, 5);
+    printSignleList(list);
+}
+
+- (IBAction)reverseSignleListAction:(id)sender
+{
+    LNode *list = createSignleList(8);
+    printSignleList(list);
+    list = signleListReverse(list);
+    printSignleList(list);
+}
 @end
