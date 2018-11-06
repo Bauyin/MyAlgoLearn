@@ -18,6 +18,7 @@
 		77077EC92191372000391900 /* ListQueueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 77077EC82191372000391900 /* ListQueueObject.m */; };
 		77077ECC2191372F00391900 /* ArrayQueueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 77077ECB2191372F00391900 /* ArrayQueueObject.m */; };
 		77077ECF21913C3F00391900 /* CirculeQueueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 77077ECE21913C3F00391900 /* CirculeQueueObject.m */; };
+		7786C3C021919CF600FBC7EB /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7786C3BF21919CF600FBC7EB /* SearchVC.m */; };
 		779563EC2181FE550008900D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 779563EB2181FE550008900D /* AppDelegate.m */; };
 		779563F22181FE550008900D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779563F02181FE550008900D /* Main.storyboard */; };
 		779563F42181FE580008900D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779563F32181FE580008900D /* Assets.xcassets */; };
@@ -48,6 +49,8 @@
 		77077ECB2191372F00391900 /* ArrayQueueObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayQueueObject.m; sourceTree = "<group>"; };
 		77077ECD21913C3F00391900 /* CirculeQueueObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CirculeQueueObject.h; sourceTree = "<group>"; };
 		77077ECE21913C3F00391900 /* CirculeQueueObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CirculeQueueObject.m; sourceTree = "<group>"; };
+		7786C3BE21919CF600FBC7EB /* SearchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchVC.h; sourceTree = "<group>"; };
+		7786C3BF21919CF600FBC7EB /* SearchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchVC.m; sourceTree = "<group>"; };
 		779563E72181FE550008900D /* MyAlgoLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAlgoLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779563EA2181FE550008900D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		779563EB2181FE550008900D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 			children = (
 				77077EBC2190377F00391900 /* SearchAlgo.h */,
 				77077EBD2190377F00391900 /* SearchAlgo.m */,
+				7786C3BE21919CF600FBC7EB /* SearchVC.h */,
+				7786C3BF21919CF600FBC7EB /* SearchVC.m */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				77077EB3218B35B300391900 /* LinkedList.m in Sources */,
 				77077EC92191372000391900 /* ListQueueObject.m in Sources */,
 				77077EB0218B358E00391900 /* SortQuestionController.m in Sources */,
+				7786C3C021919CF600FBC7EB /* SearchVC.m in Sources */,
 				77077ECC2191372F00391900 /* ArrayQueueObject.m in Sources */,
 				779563FA2181FE580008900D /* main.m in Sources */,
 				77077EAF218B358E00391900 /* SortAlgoC.c in Sources */,
