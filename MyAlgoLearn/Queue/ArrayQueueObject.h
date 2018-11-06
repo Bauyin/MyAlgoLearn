@@ -1,12 +1,15 @@
 //
-//  Queue.h
+//  ArrayQueue.h
 //  MyAlgoLearn
 //
-//  Created by 崔宝印 on 2018/11/5.
+//  Created by 崔宝印 on 2018/11/6.
 //  Copyright © 2018 koolearn. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
 
 typedef struct ArrayQueue
 {
@@ -32,28 +35,8 @@ void deArrayQueue(ArrayQueue *queue, int item);
 
 void printArrayQueue(ArrayQueue *queue);
 
-typedef struct ListQueue
-{
-    
-}ListQueue;//使用链表实现的队列，链式队列
 
-/*
- 创建大小为n的队列
- */
-ListQueue *createListQueue(int n);
-
-/*
- 入队
- */
-void enListQueue(ListQueue *queue, int item);
-/*
- 出队
- */
-void deListQueue(ListQueue *queue, int item);
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface Queue : NSObject
+@interface ArrayQueueObject : NSObject
 
 @end
 

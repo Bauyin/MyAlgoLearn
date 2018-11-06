@@ -7,7 +7,8 @@
 //
 
 #import "QueueVC.h"
-#import "Queue.h"
+#import "ArrayQueueObject.h"
+#import "ListQueueObject.h"
 
 @interface QueueVC ()
 
