@@ -10,6 +10,8 @@
 #import "SearchAlgo.h"
 #import "SortHelper.h"
 #include "SortAlgoC.h"
+#import "UIViewController+KooNavBar.h"
+#import "UIViewController+KooCustomNavigationBar.h"
 
 @interface SearchVC ()
 
@@ -20,6 +22,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+    
+    self.kooNavTintColor = [UIColor redColor];
+//    self.navigationController.navigationBar.tintColor = [UIColor redColor];
+
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"全选" style:UIBarButtonItemStylePlain target:self action:@selector(selectAllButtonItemClick)];
 }
 
 - (IBAction)binarySearchAction:(id)sender

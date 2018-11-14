@@ -24,6 +24,12 @@
 		779563F42181FE580008900D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779563F32181FE580008900D /* Assets.xcassets */; };
 		779563F72181FE580008900D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779563F52181FE580008900D /* LaunchScreen.storyboard */; };
 		779563FA2181FE580008900D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 779563F92181FE580008900D /* main.m */; };
+		77B83F1B219C2A6400AAFD8B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B83F1A219C2A6400AAFD8B /* MapKit.framework */; };
+		77CA0BED219ACDDC00BF3680 /* UIViewController+KooNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA0BEB219ACDDC00BF3680 /* UIViewController+KooNavBar.m */; };
+		77CA0BEE219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA0BEC219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.m */; };
+		77CA0BF1219ACE6D00BF3680 /* UIViewController+KooCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA0BF0219ACE6D00BF3680 /* UIViewController+KooCustomNavigationBar.m */; };
+		77CA0C1A219AD50C00BF3680 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA0C19219AD50C00BF3680 /* BaseViewController.m */; };
+		B62BF18F90B442FE6BCF7D47 /* libPods-MyAlgoLearn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8857E9FF3DA05ECFBBD2750 /* libPods-MyAlgoLearn.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +65,18 @@
 		779563F62181FE580008900D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		779563F82181FE580008900D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		779563F92181FE580008900D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77B83F1A219C2A6400AAFD8B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		77CA0BE9219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+KooNavAlpha.h"; sourceTree = "<group>"; };
+		77CA0BEA219ACDDC00BF3680 /* UIViewController+KooNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KooNavBar.h"; sourceTree = "<group>"; };
+		77CA0BEB219ACDDC00BF3680 /* UIViewController+KooNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KooNavBar.m"; sourceTree = "<group>"; };
+		77CA0BEC219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+KooNavAlpha.m"; sourceTree = "<group>"; };
+		77CA0BEF219ACE6D00BF3680 /* UIViewController+KooCustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KooCustomNavigationBar.h"; sourceTree = "<group>"; };
+		77CA0BF0219ACE6D00BF3680 /* UIViewController+KooCustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KooCustomNavigationBar.m"; sourceTree = "<group>"; };
+		77CA0C18219AD50C00BF3680 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		77CA0C19219AD50C00BF3680 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		7A495AD5011F99FC38F64B69 /* Pods-MyAlgoLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAlgoLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyAlgoLearn/Pods-MyAlgoLearn.debug.xcconfig"; sourceTree = "<group>"; };
+		BED52B82552C1BA77C5E3323 /* Pods-MyAlgoLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAlgoLearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyAlgoLearn/Pods-MyAlgoLearn.release.xcconfig"; sourceTree = "<group>"; };
+		F8857E9FF3DA05ECFBBD2750 /* libPods-MyAlgoLearn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyAlgoLearn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77B83F1B219C2A6400AAFD8B /* MapKit.framework in Frameworks */,
+				B62BF18F90B442FE6BCF7D47 /* libPods-MyAlgoLearn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,10 +121,16 @@
 		77077EBB2190373500391900 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				77CA0BEF219ACE6D00BF3680 /* UIViewController+KooCustomNavigationBar.h */,
+				77CA0BF0219ACE6D00BF3680 /* UIViewController+KooCustomNavigationBar.m */,
 				77077EBC2190377F00391900 /* SearchAlgo.h */,
 				77077EBD2190377F00391900 /* SearchAlgo.m */,
 				7786C3BE21919CF600FBC7EB /* SearchVC.h */,
 				7786C3BF21919CF600FBC7EB /* SearchVC.m */,
+				77CA0BE9219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.h */,
+				77CA0BEC219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.m */,
+				77CA0BEA219ACDDC00BF3680 /* UIViewController+KooNavBar.h */,
+				77CA0BEB219ACDDC00BF3680 /* UIViewController+KooNavBar.m */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -136,6 +162,8 @@
 			children = (
 				779563E92181FE550008900D /* MyAlgoLearn */,
 				779563E82181FE550008900D /* Products */,
+				77B83F19219C2A6400AAFD8B /* Frameworks */,
+				B91E95390A64E5293B9E4E6B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +178,7 @@
 		779563E92181FE550008900D /* MyAlgoLearn */ = {
 			isa = PBXGroup;
 			children = (
+				77B83F1C219C2B4500AAFD8B /* MyPet */,
 				77077EBF219070F000391900 /* Queue */,
 				77077EC0219070F000391900 /* Stack */,
 				77077EBB2190373500391900 /* Search */,
@@ -162,8 +191,35 @@
 				779563F52181FE580008900D /* LaunchScreen.storyboard */,
 				779563F82181FE580008900D /* Info.plist */,
 				779563F92181FE580008900D /* main.m */,
+				77CA0C18219AD50C00BF3680 /* BaseViewController.h */,
+				77CA0C19219AD50C00BF3680 /* BaseViewController.m */,
 			);
 			path = MyAlgoLearn;
+			sourceTree = "<group>";
+		};
+		77B83F19219C2A6400AAFD8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77B83F1A219C2A6400AAFD8B /* MapKit.framework */,
+				F8857E9FF3DA05ECFBBD2750 /* libPods-MyAlgoLearn.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77B83F1C219C2B4500AAFD8B /* MyPet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyPet;
+			sourceTree = "<group>";
+		};
+		B91E95390A64E5293B9E4E6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A495AD5011F99FC38F64B69 /* Pods-MyAlgoLearn.debug.xcconfig */,
+				BED52B82552C1BA77C5E3323 /* Pods-MyAlgoLearn.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 779563FD2181FE580008900D /* Build configuration list for PBXNativeTarget "MyAlgoLearn" */;
 			buildPhases = (
+				E2AFDAE4B88A6CD7349720C8 /* [CP] Check Pods Manifest.lock */,
 				779563E32181FE550008900D /* Sources */,
 				779563E42181FE550008900D /* Frameworks */,
 				779563E52181FE550008900D /* Resources */,
+				2496F20B965B8341E9BB164D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +255,11 @@
 				TargetAttributes = {
 					779563E62181FE550008900D = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -231,25 +294,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2496F20B965B8341E9BB164D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyAlgoLearn/Pods-MyAlgoLearn-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyAlgoLearn/Pods-MyAlgoLearn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2AFDAE4B88A6CD7349720C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyAlgoLearn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		779563E32181FE550008900D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CA0BEE219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.m in Sources */,
 				77077EAD218B358D00391900 /* SortController.m in Sources */,
 				77077EBE2190377F00391900 /* SearchAlgo.m in Sources */,
 				77077ECF21913C3F00391900 /* CirculeQueueObject.m in Sources */,
+				77CA0C1A219AD50C00BF3680 /* BaseViewController.m in Sources */,
 				77077EB3218B35B300391900 /* LinkedList.m in Sources */,
 				77077EC92191372000391900 /* ListQueueObject.m in Sources */,
 				77077EB0218B358E00391900 /* SortQuestionController.m in Sources */,
 				7786C3C021919CF600FBC7EB /* SearchVC.m in Sources */,
 				77077ECC2191372F00391900 /* ArrayQueueObject.m in Sources */,
+				77CA0BED219ACDDC00BF3680 /* UIViewController+KooNavBar.m in Sources */,
 				779563FA2181FE580008900D /* main.m in Sources */,
 				77077EAF218B358E00391900 /* SortAlgoC.c in Sources */,
 				77077EC6219079F400391900 /* QueueVC.m in Sources */,
 				77077EB6218C55FC00391900 /* LinkedListVC.m in Sources */,
 				779563EC2181FE550008900D /* AppDelegate.m in Sources */,
 				77077EAE218B358E00391900 /* SortHelper.m in Sources */,
+				77CA0BF1219ACE6D00BF3680 /* UIViewController+KooCustomNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,16 +507,25 @@
 		};
 		779563FE2181FE580008900D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A495AD5011F99FC38F64B69 /* Pods-MyAlgoLearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W387LF7D4B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyAlgoLearn/MyPet/Frameworks",
+				);
 				INFOPLIST_FILE = MyAlgoLearn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyAlgoLearn/MyPet/Frameworks/thirdlibs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.koolearn.MyAlgoLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,16 +536,25 @@
 		};
 		779563FF2181FE580008900D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BED52B82552C1BA77C5E3323 /* Pods-MyAlgoLearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W387LF7D4B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyAlgoLearn/MyPet/Frameworks",
+				);
 				INFOPLIST_FILE = MyAlgoLearn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyAlgoLearn/MyPet/Frameworks/thirdlibs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.koolearn.MyAlgoLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
