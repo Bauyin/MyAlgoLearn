@@ -18,5 +18,7 @@ target 'MyAlgoLearn' do
     #----------RAC相关库-----------
     pod 'ReactiveObjC'
     
+    pod 'Realm'
+    
     pod 'BaiduMapKit'
  end

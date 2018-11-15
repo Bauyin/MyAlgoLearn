@@ -7,11 +7,12 @@
 //
 
 #import "AppDelegate.h"
-//#import <BaiduMapKit/>
-//#import <BaiduMapAPI_Map/BMKLocationComponent.h>
-//#import <BaiduMapKit/BaiduMapAPI_Base/BMKMapManager.h>
 #import <BaiduMapAPI_Base/BMKMapManager.h>
-@interface AppDelegate ()<BMKGeneralDelegate>
+#import <BaiduMapAPI_Search/BMKPoiSearch.h>
+#import <BaiduMapAPI_Search/BMKPoiSearchOption.h>
+
+
+@interface AppDelegate ()<BMKGeneralDelegate,BMKPoiSearchDelegate>
 
 @property (nonatomic, strong) BMKMapManager *mapManager; //主引擎类
 
@@ -48,6 +49,46 @@
     return YES;
 }
 
+- (void)search
+{
+    //初始化搜索对象 ，并设置代理
+    BMKPoiSearch *searcher =[[BMKPoiSearch alloc]init];
+    searcher.delegate = self;
+    //请求参数类BMKCitySearchOption
+    BMKPOICitySearchOption *citySearchOption = [[BMKPOICitySearchOption alloc]init];
+    citySearchOption.city= @"北京";
+    citySearchOption.keyword = @"宠物店";
+    citySearchOption.scope = BMK_POI_SCOPE_DETAIL_INFORMATION;
+    citySearchOption.scope = BMK_POI_SCOPE_DETAIL_INFORMATION;
+    citySearchOption.pageIndex = 0;
+    citySearchOption.pageSize = 20;
+
+    //发起城市内POI检索
+    BOOL flag = [searcher poiSearchInCity:citySearchOption];
+    if(flag) {
+        NSLog(@"城市内检索发送成功");
+    }
+    else {
+        NSLog(@"城市内检索发送失败");
+    }
+}
+
+- (void)onGetPoiResult:(BMKPoiSearch*)searcher result:(BMKPOISearchResult*)poiResult errorCode:(BMKSearchErrorCode)errorCode
+{
+    
+}
+
+/**
+ *返回POI详情搜索结果
+ *@param searcher 搜索对象
+ *@param poiDetailResult 详情搜索结果
+ *@param errorCode 错误号，@see BMKSearchErrorCode
+ */
+- (void)onGetPoiDetailResult:(BMKPoiSearch*)searcher result:(BMKPOIDetailSearchResult*)poiDetailResult errorCode:(BMKSearchErrorCode)errorCode
+{
+    
+}
+
 /**
  联网结果回调
  
@@ -69,6 +110,7 @@
 - (void)onGetPermissionState:(int)iError {
     if (0 == iError) {
         NSLog(@"授权成功");
+        [self search];
     } else {
         NSLog(@"授权失败：%d", iError);
     }

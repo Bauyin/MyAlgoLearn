@@ -29,6 +29,8 @@
 		77CA0BEE219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA0BEC219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.m */; };
 		77CA0BF1219ACE6D00BF3680 /* UIViewController+KooCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA0BF0219ACE6D00BF3680 /* UIViewController+KooCustomNavigationBar.m */; };
 		77CA0C1A219AD50C00BF3680 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA0C19219AD50C00BF3680 /* BaseViewController.m */; };
+		77EB3B2B219D19E300D52F4E /* BaiduController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EB3B2A219D19E300D52F4E /* BaiduController.m */; };
+		77EB3B2E219D1A8100D52F4E /* PetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EB3B2D219D1A8100D52F4E /* PetController.m */; };
 		B62BF18F90B442FE6BCF7D47 /* libPods-MyAlgoLearn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8857E9FF3DA05ECFBBD2750 /* libPods-MyAlgoLearn.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,10 @@
 		77CA0BF0219ACE6D00BF3680 /* UIViewController+KooCustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KooCustomNavigationBar.m"; sourceTree = "<group>"; };
 		77CA0C18219AD50C00BF3680 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		77CA0C19219AD50C00BF3680 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		77EB3B29219D19E300D52F4E /* BaiduController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaiduController.h; sourceTree = "<group>"; };
+		77EB3B2A219D19E300D52F4E /* BaiduController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduController.m; sourceTree = "<group>"; };
+		77EB3B2C219D1A8100D52F4E /* PetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PetController.h; sourceTree = "<group>"; };
+		77EB3B2D219D1A8100D52F4E /* PetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PetController.m; sourceTree = "<group>"; };
 		7A495AD5011F99FC38F64B69 /* Pods-MyAlgoLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAlgoLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyAlgoLearn/Pods-MyAlgoLearn.debug.xcconfig"; sourceTree = "<group>"; };
 		BED52B82552C1BA77C5E3323 /* Pods-MyAlgoLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAlgoLearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyAlgoLearn/Pods-MyAlgoLearn.release.xcconfig"; sourceTree = "<group>"; };
 		F8857E9FF3DA05ECFBBD2750 /* libPods-MyAlgoLearn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyAlgoLearn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +215,10 @@
 		77B83F1C219C2B4500AAFD8B /* MyPet */ = {
 			isa = PBXGroup;
 			children = (
+				77EB3B29219D19E300D52F4E /* BaiduController.h */,
+				77EB3B2A219D19E300D52F4E /* BaiduController.m */,
+				77EB3B2C219D1A8100D52F4E /* PetController.h */,
+				77EB3B2D219D1A8100D52F4E /* PetController.m */,
 			);
 			path = MyPet;
 			sourceTree = "<group>";
@@ -350,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77EB3B2B219D19E300D52F4E /* BaiduController.m in Sources */,
 				77CA0BEE219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.m in Sources */,
 				77077EAD218B358D00391900 /* SortController.m in Sources */,
 				77077EBE2190377F00391900 /* SearchAlgo.m in Sources */,
@@ -364,6 +375,7 @@
 				779563FA2181FE580008900D /* main.m in Sources */,
 				77077EAF218B358E00391900 /* SortAlgoC.c in Sources */,
 				77077EC6219079F400391900 /* QueueVC.m in Sources */,
+				77EB3B2E219D1A8100D52F4E /* PetController.m in Sources */,
 				77077EB6218C55FC00391900 /* LinkedListVC.m in Sources */,
 				779563EC2181FE550008900D /* AppDelegate.m in Sources */,
 				77077EAE218B358E00391900 /* SortHelper.m in Sources */,
