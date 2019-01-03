@@ -25,6 +25,7 @@
 		779563F72181FE580008900D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779563F52181FE580008900D /* LaunchScreen.storyboard */; };
 		779563FA2181FE580008900D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 779563F92181FE580008900D /* main.m */; };
 		77B83F1B219C2A6400AAFD8B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B83F1A219C2A6400AAFD8B /* MapKit.framework */; };
+		77BA94DE21DDBAA000A4D345 /* ShuatiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BA94DD21DDBAA000A4D345 /* ShuatiController.m */; };
 		77CA0BED219ACDDC00BF3680 /* UIViewController+KooNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA0BEB219ACDDC00BF3680 /* UIViewController+KooNavBar.m */; };
 		77CA0BEE219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA0BEC219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.m */; };
 		77CA0BF1219ACE6D00BF3680 /* UIViewController+KooCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA0BF0219ACE6D00BF3680 /* UIViewController+KooCustomNavigationBar.m */; };
@@ -68,6 +69,8 @@
 		779563F82181FE580008900D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		779563F92181FE580008900D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77B83F1A219C2A6400AAFD8B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		77BA94DC21DDBAA000A4D345 /* ShuatiController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShuatiController.h; sourceTree = "<group>"; };
+		77BA94DD21DDBAA000A4D345 /* ShuatiController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShuatiController.m; sourceTree = "<group>"; };
 		77CA0BE9219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+KooNavAlpha.h"; sourceTree = "<group>"; };
 		77CA0BEA219ACDDC00BF3680 /* UIViewController+KooNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KooNavBar.h"; sourceTree = "<group>"; };
 		77CA0BEB219ACDDC00BF3680 /* UIViewController+KooNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KooNavBar.m"; sourceTree = "<group>"; };
@@ -184,6 +187,7 @@
 		779563E92181FE550008900D /* MyAlgoLearn */ = {
 			isa = PBXGroup;
 			children = (
+				77BA94DB21DDBA7500A4D345 /* 刷题 */,
 				77B83F1C219C2B4500AAFD8B /* MyPet */,
 				77077EBF219070F000391900 /* Queue */,
 				77077EC0219070F000391900 /* Stack */,
@@ -221,6 +225,15 @@
 				77EB3B2D219D1A8100D52F4E /* PetController.m */,
 			);
 			path = MyPet;
+			sourceTree = "<group>";
+		};
+		77BA94DB21DDBA7500A4D345 /* 刷题 */ = {
+			isa = PBXGroup;
+			children = (
+				77BA94DC21DDBAA000A4D345 /* ShuatiController.h */,
+				77BA94DD21DDBAA000A4D345 /* ShuatiController.m */,
+			);
+			path = "刷题";
 			sourceTree = "<group>";
 		};
 		B91E95390A64E5293B9E4E6B /* Pods */ = {
@@ -369,6 +382,7 @@
 				77077EB3218B35B300391900 /* LinkedList.m in Sources */,
 				77077EC92191372000391900 /* ListQueueObject.m in Sources */,
 				77077EB0218B358E00391900 /* SortQuestionController.m in Sources */,
+				77BA94DE21DDBAA000A4D345 /* ShuatiController.m in Sources */,
 				7786C3C021919CF600FBC7EB /* SearchVC.m in Sources */,
 				77077ECC2191372F00391900 /* ArrayQueueObject.m in Sources */,
 				77CA0BED219ACDDC00BF3680 /* UIViewController+KooNavBar.m in Sources */,
@@ -523,8 +537,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W387LF7D4B;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 66X9PJVZ92;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyAlgoLearn/MyPet/Frameworks",
@@ -541,7 +555,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.koolearn.MyAlgoLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = dev_wildcard;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -552,8 +566,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W387LF7D4B;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyAlgoLearn/MyPet/Frameworks",
