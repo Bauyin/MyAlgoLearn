@@ -7,6 +7,7 @@
 //
 
 #import "ShuatiController.h"
+#include "JewelAndStone.h"
 
 @interface ShuatiController ()
 
@@ -23,28 +24,8 @@
 {
     char *J = "a";
     char *S = "AAbbbbAAAA";
-    NSLog(@"%d",numJewelsInStones(J, S));
+    NSLog(@"numJewelsInStones:%d",numJewelsInStones(J, S));
 }
 
-int numJewelsInStones(char* J, char* S) {
-    
-    int jLenth = (int)strlen(J);
-    int sLenth = (int)strlen(S);
 
-    int sum = 0;
-    
-    for (int m = 0; m < jLenth; m++)
-    {
-        char jChar = J[m];
-        for (int n = 0 ; n < sLenth; n++)
-        {
-            char sChar = S[n];
-            if (jChar == sChar)
-            {
-                sum++;
-            }
-        }
-    }
-    return sum;
-}
 @end

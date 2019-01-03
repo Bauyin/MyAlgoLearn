@@ -26,6 +26,7 @@
 		779563FA2181FE580008900D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 779563F92181FE580008900D /* main.m */; };
 		77B83F1B219C2A6400AAFD8B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B83F1A219C2A6400AAFD8B /* MapKit.framework */; };
 		77BA94DE21DDBAA000A4D345 /* ShuatiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BA94DD21DDBAA000A4D345 /* ShuatiController.m */; };
+		77BA94E321DDF7F300A4D345 /* JewelAndStone.c in Sources */ = {isa = PBXBuildFile; fileRef = 77BA94E221DDF7F300A4D345 /* JewelAndStone.c */; };
 		77CA0BED219ACDDC00BF3680 /* UIViewController+KooNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA0BEB219ACDDC00BF3680 /* UIViewController+KooNavBar.m */; };
 		77CA0BEE219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA0BEC219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.m */; };
 		77CA0BF1219ACE6D00BF3680 /* UIViewController+KooCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA0BF0219ACE6D00BF3680 /* UIViewController+KooCustomNavigationBar.m */; };
@@ -71,6 +72,8 @@
 		77B83F1A219C2A6400AAFD8B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		77BA94DC21DDBAA000A4D345 /* ShuatiController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShuatiController.h; sourceTree = "<group>"; };
 		77BA94DD21DDBAA000A4D345 /* ShuatiController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShuatiController.m; sourceTree = "<group>"; };
+		77BA94E121DDF7F300A4D345 /* JewelAndStone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JewelAndStone.h; sourceTree = "<group>"; };
+		77BA94E221DDF7F300A4D345 /* JewelAndStone.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = JewelAndStone.c; sourceTree = "<group>"; };
 		77CA0BE9219ACDDC00BF3680 /* UINavigationController+KooNavAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+KooNavAlpha.h"; sourceTree = "<group>"; };
 		77CA0BEA219ACDDC00BF3680 /* UIViewController+KooNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KooNavBar.h"; sourceTree = "<group>"; };
 		77CA0BEB219ACDDC00BF3680 /* UIViewController+KooNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KooNavBar.m"; sourceTree = "<group>"; };
@@ -159,13 +162,6 @@
 			path = Queue;
 			sourceTree = "<group>";
 		};
-		77077EC0219070F000391900 /* Stack */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Stack;
-			sourceTree = "<group>";
-		};
 		779563DE2181FE550008900D = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +186,6 @@
 				77BA94DB21DDBA7500A4D345 /* 刷题 */,
 				77B83F1C219C2B4500AAFD8B /* MyPet */,
 				77077EBF219070F000391900 /* Queue */,
-				77077EC0219070F000391900 /* Stack */,
 				77077EBB2190373500391900 /* Search */,
 				77077EAC218B358D00391900 /* LinkedList */,
 				77077EA3218B358D00391900 /* Sort */,
@@ -232,6 +227,8 @@
 			children = (
 				77BA94DC21DDBAA000A4D345 /* ShuatiController.h */,
 				77BA94DD21DDBAA000A4D345 /* ShuatiController.m */,
+				77BA94E121DDF7F300A4D345 /* JewelAndStone.h */,
+				77BA94E221DDF7F300A4D345 /* JewelAndStone.c */,
 			);
 			path = "刷题";
 			sourceTree = "<group>";
@@ -380,6 +377,7 @@
 				77077ECF21913C3F00391900 /* CirculeQueueObject.m in Sources */,
 				77CA0C1A219AD50C00BF3680 /* BaseViewController.m in Sources */,
 				77077EB3218B35B300391900 /* LinkedList.m in Sources */,
+				77BA94E321DDF7F300A4D345 /* JewelAndStone.c in Sources */,
 				77077EC92191372000391900 /* ListQueueObject.m in Sources */,
 				77077EB0218B358E00391900 /* SortQuestionController.m in Sources */,
 				77BA94DE21DDBAA000A4D345 /* ShuatiController.m in Sources */,
@@ -539,20 +537,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 66X9PJVZ92;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/MyAlgoLearn/MyPet/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MyAlgoLearn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/MyAlgoLearn/MyPet/Frameworks/thirdlibs",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.koolearn.MyAlgoLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = dev_wildcard;
@@ -568,20 +560,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/MyAlgoLearn/MyPet/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MyAlgoLearn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/MyAlgoLearn/MyPet/Frameworks/thirdlibs",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.koolearn.MyAlgoLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
